@@ -1,7 +1,7 @@
 'use strict'
-function play(messageEvent){
+function tock(messageEvent){
 	postMessage(messageEvent.data.length/2);
 }
 onmessage = messageEvent => {
-	onmessage = play;
+	onmessage = tock;
 };
