@@ -1,7 +1,4 @@
 'use strict'
-function tock(messageEvent){
-	postMessage(messageEvent.data.length/2);
+ParticipantHelper.onmessage = data => {
+	ParticipantHelper.respond(data.length/2);
 }
-onmessage = messageEvent => {
-	onmessage = tock;
-};
